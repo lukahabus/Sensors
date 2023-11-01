@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package sensor;
+
+import "google/protobuf/empty.proto";
+
+message Measurement {
+	double temperature = 1;
+	double pressure = 2;
+	double humidity = 3;
+	double co = 4;
+	double no2 = 5;
+	double so2 = 6;
+}
+
+service Sensor {
+	rpc GetMeasurement(google.protobuf.Empty) returns (Measurement) {}
+}
