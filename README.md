@@ -1,9 +1,7 @@
-# Install pacakages
+# Install packages
 
-inside Sensor and Node type yarn to install all pacakages
+Inside Sensor and Server type yarn to install all packages
 
 # Run
 
-forgot how to exactly run Sensor and Node, try
-yarn start Sensor
-yarn start Node
+yarn start

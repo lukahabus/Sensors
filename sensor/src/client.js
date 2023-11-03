@@ -120,6 +120,7 @@ function parseMeasurements(myMeasurement, neighborMeasurement) {
 
 async function startClient(lat, long, ip, port) {
   await register(lat, long, ip, port);
+  await sleep(measuringInterval);
   await findClosest();
 
   while (true) {

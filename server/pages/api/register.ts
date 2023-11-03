@@ -23,5 +23,7 @@ export default async function handler(
     data: sensorInput,
   });
 
+  res.setHeader('Location', `${req.headers.host}/api/sensors?id=${sensor.id}`);
+
   res.status(201).json(sensor);
 }
